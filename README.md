@@ -39,9 +39,9 @@ yarn add github:adiwajshing/baileys
 Then import in your code using:
 ``` ts 
 // for multi-device
-import makeWASocket from '@adiwajshing/baileys'
+import makeWASocket from '@ominduanjane/whatsapp-web-api'
 // for legacy web
-import {makeWALegacySocket} from '@adiwajshing/baileys'
+import {makeWALegacySocket} from '@ominduanjane/whatsapp-web-api'
 ```
 
 ## Unit Tests
@@ -51,7 +51,7 @@ TODO
 ## Connecting
 
 ``` ts
-import makeWASocket, { DisconnectReason } from '@adiwajshing/baileys'
+import makeWASocket, { DisconnectReason } from '@ominduanjane/whatsapp-web-api'
 import { Boom } from '@hapi/boom'
 
 async function connectToWhatsApp () {
@@ -288,7 +288,7 @@ Example on using the eg. version:
 ``` ts
 import P from "pino"
 import { Boom } from "@hapi/boom"
-import { makeWALegacySocket } from '@adiwajshing/baileys'
+import { makeWALegacySocket } from '@ominduanjane/whatsapp-web-api'
 
 // store can be used with legacy version as well
 const store = makeInMemoryStore({ logger: P().child({ level: 'debug', stream: 'store' }) })
@@ -305,7 +305,7 @@ store.bind(sock.ev)
 If you need a type representing either the legacy or MD version:
 ``` ts
 // this type can have any of the socket types underneath
-import { AnyWASocket } from '@adiwajshing/baileys'
+import { AnyWASocket } from '@ominduanjane/whatsapp-web-api'
 ```
 
 ## Sending Messages
@@ -315,7 +315,7 @@ import { AnyWASocket } from '@adiwajshing/baileys'
 ### Non-Media Messages
 
 ``` ts
-import { MessageType, MessageOptions, Mimetype } from '@adiwajshing/baileys'
+import { MessageType, MessageOptions, Mimetype } from '@ominduanjane/whatsapp-web-api'
 
 const id = 'abcd@s.whatsapp.net' // the WhatsApp ID 
 // send a simple text!
@@ -364,8 +364,8 @@ const sendMsg = await sock.sendMessage(id, buttonMessage)
 
 //send a template message!
 const templateButtons = [
-    {index: 1, urlButton: {displayText: '⭐ Star Baileys on GitHub!', url: 'https://github.com/adiwajshing/Baileys'}},
-    {index: 2, callButton: {displayText: 'Call me!', phoneNumber: '+1 (234) 5678-901'}},
+    {index: 1, urlButton: {displayText: '⭐ Star whatsapp-web-api on GitHub!', url: 'https://github.com/OminduAnjane/whatsapp-web-api.git'}},
+    {index: 2, callButton: {displayText: 'Call me!', phoneNumber: '+94 760510568'}},
     {index: 3, quickReplyButton: {displayText: 'This is a reply, just like normal buttons!', id: 'id-like-buttons-message'}},
 ]
 
