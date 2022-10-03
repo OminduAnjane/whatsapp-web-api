@@ -1,6 +1,6 @@
-# Baileys - Typescript/Javascript WhatsApp Web API
+# Whatapp-web-api - Typescript/Javascript WhatsApp Web API
  
- Baileys does not require Selenium or any other browser to be interface with WhatsApp Web, it does so directly using a **WebSocket**. Not running Selenium or Chromimum saves you like **half a gig** of ram :/ 
+ Whatapp web api does not require Selenium or any other browser to be interface with WhatsApp Web, it does so directly using a **WebSocket**. Not running Selenium or Chromimum saves you like **half a gig** of ram :/ 
 
  Baileys supports interacting with the multi-device & web versions of WhatsApp.
 
@@ -15,10 +15,10 @@
 
 ## Example
 
-Do check out & run [example.ts](https://github.com/adiwajshing/Baileys/blob/master/Example/example.ts) to see example usage of the library.
+Do check out & run [example.ts](https://github.com/OminduAnjane/whatsapp-web-api/blob/master/Example/example.ts) to see example usage of the library.
 The script covers most common use cases.
 To run the example script, download or clone the repo and then type the following in terminal:
-1. ``` cd path/to/Baileys ```
+1. ``` cd path/to/whatsapp-web-api ```
 2. ``` yarn ```
 3. 
     - ``` yarn example ``` for the multi-device edition
@@ -28,12 +28,12 @@ To run the example script, download or clone the repo and then type the followin
 
 Use the stable version:
 ```
-yarn add @adiwajshing/baileys
+yarn add @ominduanjane/whatsapp-web-api
 ```
 
 Use the edge version (no guarantee of stability, but latest fixes + features)
 ```
-yarn add github:adiwajshing/baileys
+yarn add github:ominduanjane/whatsapp-web-api
 ```
 
 Then import in your code using:
