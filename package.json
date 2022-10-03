@@ -1,8 +1,8 @@
 {
-  "name": "@adiwajshing/baileys",
+  "name": "@ominduanjane/whatsapp-web-api",
   "version": "4.2.0",
   "description": "WhatsApp API",
-  "homepage": "https://github.com/adiwajshing/Baileys",
+  "homepage": "https://github.com/OminduAnjane/whatsapp-web-api",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "keywords": [
